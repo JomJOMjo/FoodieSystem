@@ -80,6 +80,8 @@
     <Compile Include="AccessLayer\CategoryAL.cs" />
     <Compile Include="AccessLayer\CustomerAL.cs" />
     <Compile Include="AccessLayer\LoginAL.cs" />
+    <Compile Include="AccessLayer\OrderAL.cs" />
+    <Compile Include="AccessLayer\OrderdetailsAL.cs" />
     <Compile Include="AccessLayer\ProductAL.cs" />
     <Compile Include="AccessLayer\userAL.cs" />
     <Compile Include="Admin_Dashboard.cs">
@@ -91,6 +93,8 @@
     <Compile Include="BusinessLayer\CategoryL.cs" />
     <Compile Include="BusinessLayer\CustomerL.cs" />
     <Compile Include="BusinessLayer\LoginLayer.cs" />
+    <Compile Include="BusinessLayer\OrderL.cs" />
+    <Compile Include="BusinessLayer\order_detailsL.cs" />
     <Compile Include="BusinessLayer\ProductL.cs" />
     <Compile Include="BusinessLayer\UserBL.cs" />
     <Compile Include="Categories.cs">
@@ -325,6 +329,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\png-transparent-computer-icons-error-computer-text-trademark-computer-thumbnail3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-fast-food-logo-png-image_57631712.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jinx-flipzflops.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salesFormsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.purchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.lblloginuser = new System.Windows.Forms.Label();
             this.lblloginuser1 = new System.Windows.Forms.Label();
-            this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pblogout1 = new System.Windows.Forms.PictureBox();
@@ -49,8 +48,7 @@
             this.menuStrip1.BackColor = System.Drawing.Color.Turquoise;
             this.menuStrip1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usersToolStripMenuItem,
-            this.salesFormsToolStripMenuItem,
+            this.purchaseToolStripMenuItem,
             this.customerToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -58,18 +56,19 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // usersToolStripMenuItem
+            // purchaseToolStripMenuItem
             // 
-            this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(99, 25);
-            this.usersToolStripMenuItem.Text = "Purchases";
-            this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
+            this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
+            this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(114, 25);
+            this.purchaseToolStripMenuItem.Text = "Place Order";
+            this.purchaseToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
-            // salesFormsToolStripMenuItem
+            // customerToolStripMenuItem
             // 
-            this.salesFormsToolStripMenuItem.Name = "salesFormsToolStripMenuItem";
-            this.salesFormsToolStripMenuItem.Size = new System.Drawing.Size(60, 25);
-            this.salesFormsToolStripMenuItem.Text = "Sales";
+            this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(98, 25);
+            this.customerToolStripMenuItem.Text = "Customer";
+            this.customerToolStripMenuItem.Click += new System.EventHandler(this.customerToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -101,13 +100,6 @@
             this.lblloginuser1.Name = "lblloginuser1";
             this.lblloginuser1.Size = new System.Drawing.Size(0, 19);
             this.lblloginuser1.TabIndex = 6;
-            // 
-            // customerToolStripMenuItem
-            // 
-            this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(98, 25);
-            this.customerToolStripMenuItem.Text = "Customer";
-            this.customerToolStripMenuItem.Click += new System.EventHandler(this.customerToolStripMenuItem_Click);
             // 
             // pictureBox2
             // 
@@ -172,8 +164,7 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salesFormsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem purchaseToolStripMenuItem;
         private System.Windows.Forms.PictureBox pblogout1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblloginuser;

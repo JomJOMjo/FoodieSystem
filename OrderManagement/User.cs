@@ -64,7 +64,7 @@ namespace OrderManagement
             UserBL user = a.GetIDFromusername(userloggedin);
 
 
-            u.added_by = user.userId;
+          
             
 
             bool success  = a.Insert(u);
@@ -110,7 +110,7 @@ namespace OrderManagement
             u.gender = cbgender.Text;
             u.User_Type = cbuserType.Text;
             u.added_date = DateTime.Now;
-            u.added_by = 1;
+       
           
 
             bool success  = a.Update(u);
@@ -164,6 +164,11 @@ namespace OrderManagement
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtuserID_TextChanged(object sender, EventArgs e)
         {
 
         }

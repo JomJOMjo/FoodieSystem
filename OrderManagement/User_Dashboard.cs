@@ -16,7 +16,7 @@ namespace OrderManagement
         {
             InitializeComponent();
         }
-
+        public static string ordertype;
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -49,6 +49,7 @@ namespace OrderManagement
         {
             Purchase_Order po = new Purchase_Order();
             po.Show();
+            ordertype = "Place Order";
         }
     }
 }

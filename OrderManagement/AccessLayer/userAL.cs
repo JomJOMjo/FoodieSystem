@@ -52,7 +52,7 @@ namespace OrderManagement.AccessLayer
             SqlConnection conn = new SqlConnection(myconnstrng);
             try
             {
-                String sql = "INSERT INTO Users (First_name, Last_name,Email,Username,Password,contact,address,gender,User_Type,added_date,added_by) VALUES(@First_name, @Last_name,@Email,@Username,@Password,@contact,@address,@gender,@User_Type,@added_date,@added_by)";
+                String sql = "INSERT INTO Users (First_name, Last_name,Email,Username,Password,contact,address,gender,User_Type,added_date) VALUES(@First_name, @Last_name,@Email,@Username,@Password,@contact,@address,@gender,@User_Type,@added_date)";
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@First_name", u.First_name);
@@ -65,7 +65,7 @@ namespace OrderManagement.AccessLayer
                 cmd.Parameters.AddWithValue("@gender", u.gender);
                 cmd.Parameters.AddWithValue("@User_Type", u.User_Type);
                 cmd.Parameters.AddWithValue("@added_date", u.added_date);
-                cmd.Parameters.AddWithValue("@added_by", u.added_by);
+                
 
                 conn.Open();
 
@@ -101,7 +101,7 @@ namespace OrderManagement.AccessLayer
             SqlConnection conn = new SqlConnection(myconnstrng);
             try
             {
-                string sql = "UPDATE Users SET First_name = @First_name, Last_name=@Last_name,Email =@Email,Username=@Username,Password=@Password,contact=@contact,address=@address,gender=@gender,User_Type=@User_Type,added_date=@added_date,added_by=@added_by WHERE userId=@userId";
+                string sql = "UPDATE Users SET First_name = @First_name, Last_name=@Last_name,Email =@Email,Username=@Username,Password=@Password,contact=@contact,address=@address,gender=@gender,User_Type=@User_Type,added_date=@added_date WHERE userId=@userId";
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@First_name", u.First_name);
@@ -114,7 +114,6 @@ namespace OrderManagement.AccessLayer
                 cmd.Parameters.AddWithValue("@gender", u.gender);
                 cmd.Parameters.AddWithValue("@User_Type", u.User_Type);
                 cmd.Parameters.AddWithValue("@added_date", u.added_date);
-                cmd.Parameters.AddWithValue("@added_by", u.added_by);
                 cmd.Parameters.AddWithValue("@userId", u.userId);
 
                 conn.Open();

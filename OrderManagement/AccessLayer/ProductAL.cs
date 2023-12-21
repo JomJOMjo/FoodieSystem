@@ -44,43 +44,43 @@ namespace OrderManagement.AccessLayer
         #region Inser new Product
         public bool Insert(ProductL p)
         {
-            //Creating Boolean Variable and set its default value to false
+
             bool isSuccess = false;
 
-            //Sql Connection for DAtabase
+    
             SqlConnection conn = new SqlConnection(myconnstrng);
 
             try
             {
-                //SQL Query to insert product into database
-                String sql = "INSERT INTO Products (Name, Category, Description, rate, qty, added_date, added_by) VALUES (@Name, @Category, @Description, @rate, @qty, @added_date, @added_by)";
+             
+                String sql = "INSERT INTO Products (Name, Category, Description, rate, qty, added_date) VALUES (@Name, @Category, @Description, @rate, @qty, @added_date)";
 
-                //Creating SQL Command to pass the values
+             
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
-                //Passign the values through parameters
+            
                 cmd.Parameters.AddWithValue("@Name", p.Name);
                 cmd.Parameters.AddWithValue("@Category", p.Category);
                 cmd.Parameters.AddWithValue("@Description", p.Description);
                 cmd.Parameters.AddWithValue("@rate", p.rate);
                 cmd.Parameters.AddWithValue("@qty", p.qty);
                 cmd.Parameters.AddWithValue("@added_date", p.added_date);
-                cmd.Parameters.AddWithValue("@added_by", p.added_by);
+            
 
-                //Opening the Database connection
+
                 conn.Open();
 
                 int rows = cmd.ExecuteNonQuery();
 
-                //If the query is executed successfully then the value of rows will be greater than 0 else it will be less than 0
+                
                 if (rows > 0)
                 {
-                    //Query Executed Successfully
+                 
                     isSuccess = true;
                 }
                 else
                 {
-                    //FAiled to Execute Query
+              
                     isSuccess = false;
                 }
             }
@@ -108,7 +108,7 @@ namespace OrderManagement.AccessLayer
             try
             {
                 //SQL Query to Update Data in dAtabase
-                String sql = "UPDATE Products SET name=@Name, Category=@Category, Description=@Description, rate=@rate, added_date=@added_date, added_by=@added_by WHERE id=@id";
+                String sql = "UPDATE Products SET name=@Name, Category=@Category, Description=@Description, rate=@rate, added_date=@added_date WHERE id=@id";
 
                 //Create SQL Cmmand to pass the value to query
                 SqlCommand cmd = new SqlCommand(sql, conn);
@@ -119,24 +119,23 @@ namespace OrderManagement.AccessLayer
                 cmd.Parameters.AddWithValue("@rate", p.rate);
                 cmd.Parameters.AddWithValue("@qty", p.qty);
                 cmd.Parameters.AddWithValue("@added_date", p.added_date);
-                cmd.Parameters.AddWithValue("@added_by", p.added_by);
                 cmd.Parameters.AddWithValue("@id", p.id);
 
-                //Open the Database connection
+           
                 conn.Open();
 
-                //Create Int Variable to check if the query is executed successfully or not
+               
                 int rows = cmd.ExecuteNonQuery();
 
-                //if the query is executed successfully then the value of rows will be greater than 0 else it will be less than zero
+               
                 if (rows > 0)
                 {
-                    //Query ExecutedSuccessfully
+                
                     isSuccess = true;
                 }
                 else
                 {
-                    //Failed to Execute Query
+                   
                     isSuccess = false;
                 }
             }
@@ -223,5 +222,40 @@ namespace OrderManagement.AccessLayer
              
         }
         #endregion
+        #region search customer for products
+        public ProductL searchcustomerproducts(string keywords)
+        {
+            ProductL pl = new ProductL();
+            SqlConnection conn = new SqlConnection(myconnstrng);
+
+            DataTable dt = new DataTable();
+            try
+            {
+                string sql = "SELECT Name, rate,qty from Products WHERE id LIKE '%" + keywords + "%' OR Name LIKE '%" + keywords + "%'";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+
+                conn.Open();
+                adapter.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    pl.Name = dt.Rows[0]["Name"].ToString();
+                    pl.rate = decimal.Parse(dt.Rows[0]["rate"].ToString());
+                    pl.qty = decimal.Parse(dt.Rows[0]["qty"].ToString());
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return pl;
+
+        }
     }
+    #endregion
 }
+

@@ -206,6 +206,7 @@
             this.txtuserID.ReadOnly = true;
             this.txtuserID.Size = new System.Drawing.Size(148, 27);
             this.txtuserID.TabIndex = 2;
+            this.txtuserID.TextChanged += new System.EventHandler(this.txtuserID_TextChanged);
             // 
             // txtfname
             // 

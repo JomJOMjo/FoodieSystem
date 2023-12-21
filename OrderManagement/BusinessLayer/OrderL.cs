@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace OrderManagement.BusinessLayer
 {
-    internal class CustomerL
+    internal class OrderL
     {
         public int id {  get; set; }
         public string Type { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string contact {  get; set; }
-        public string address { get; set; }
-        public DateTime added_date { get; set; }
+        public int cust_id { get; set; }
+        public decimal g_Total { get; set; }
+        public DateTime trans_date { get; set; }
+        public decimal Tax { get; set; }
+        public decimal Discount { get; set; }
     }
 }

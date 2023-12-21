@@ -11,11 +11,12 @@ namespace OrderManagement.BusinessLayer
         public int id {  get; set; }
         public string Name { get; set; }
         public string Category { get; set; }
+        public int Inventory {  get; set; }
         public string Description { get; set; }
         public decimal rate { get; set; }
         public decimal qty { get; set; }
         public DateTime added_date { get; set; }
-        public int added_by { get; set;}
+      
 
 
     }

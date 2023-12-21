@@ -179,9 +179,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Foodmenustrip);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.Foodmenustrip;
             this.Name = "Guest_Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GUEST DASHBOARD";
             this.Load += new System.EventHandler(this.Guest_Dashboard_Load);
             this.Foodmenustrip.ResumeLayout(false);

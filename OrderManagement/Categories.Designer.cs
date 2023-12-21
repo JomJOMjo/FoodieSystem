@@ -151,6 +151,7 @@
             this.dgvcategory.Name = "dgvcategory";
             this.dgvcategory.Size = new System.Drawing.Size(391, 230);
             this.dgvcategory.TabIndex = 3;
+            this.dgvcategory.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvcategory_RowHeaderMouseClick);
             // 
             // label4
             // 

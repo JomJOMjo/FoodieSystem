@@ -12,6 +12,6 @@ namespace OrderManagement.BusinessLayer
         public string Title {  get; set; }
         public string Description { get; set; }
         public DateTime added_date { get; set; }
-        public int added_by {  get; set; }
+     
     }
 }

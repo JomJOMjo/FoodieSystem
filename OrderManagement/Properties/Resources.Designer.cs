@@ -233,6 +233,26 @@ namespace OrderManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap giphy1 {
+            get {
+                object obj = ResourceManager.GetObject("giphy1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giphy2 {
+            get {
+                object obj = ResourceManager.GetObject("giphy2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap givelat {
             get {
                 object obj = ResourceManager.GetObject("givelat", resourceCulture);
@@ -246,6 +266,16 @@ namespace OrderManagement.Properties {
         internal static System.Drawing.Bitmap Grilled_Salmon_1 {
             get {
                 object obj = ResourceManager.GetObject("Grilled-Salmon-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jinx_flipzflops {
+            get {
+                object obj = ResourceManager.GetObject("jinx-flipzflops", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -357,6 +387,26 @@ namespace OrderManagement.Properties {
         internal static System.Drawing.Bitmap pngtree_fast_food_logo_png_image_5763171 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-fast-food-logo-png-image_5763171", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_fast_food_logo_png_image_57631711 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-fast-food-logo-png-image_57631711", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_fast_food_logo_png_image_57631712 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-fast-food-logo-png-image_57631712", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -48,12 +48,12 @@ namespace OrderManagement.AccessLayer
 
             try
             {
-                string sql = "INSERT INTO Categories (Title, Description, added_date, added_by)VALUES(@Title, @Description, @added_date, @added_by)";
+                string sql = "INSERT INTO Categories (Title, Description, added_date)VALUES(@Title, @Description, @added_date)";
                 SqlCommand cmd = new SqlCommand(sql,conn);
                 cmd.Parameters.AddWithValue("@Title", c.Title);
                 cmd.Parameters.AddWithValue("@Description", c.Description);
                 cmd.Parameters.AddWithValue("@added_date", c.added_date);
-                cmd.Parameters.AddWithValue("@added_by", c.added_by);
+           
                 conn.Open();
 
                 //CREATE int to execute query
@@ -90,14 +90,13 @@ namespace OrderManagement.AccessLayer
 
             try
             {
-                string sql = "UPDATE Categories SET Title=@Title,Description=@Description,added_date=@added_date,added_by=@added_by WHERE id =@id";
+                string sql = "UPDATE Categories SET Title=@Title,Description=@Description,added_date=@added_date WHERE id =@id";
 
                 SqlCommand cmd  = new SqlCommand (sql,conn);
 
                 cmd.Parameters.AddWithValue("@Title", c.Title);
                 cmd.Parameters.AddWithValue("@Description", c.Description);
                 cmd.Parameters.AddWithValue("@added_date", c.added_date);
-                cmd.Parameters.AddWithValue("@added_by", c.added_by);
                 cmd.Parameters.AddWithValue("@id", c.id);
 
                 conn.Open();
@@ -124,7 +123,7 @@ namespace OrderManagement.AccessLayer
 
             return isSuccess;
         }
-        #endregion C
+        #endregion 
         #region Delete Category
         public bool Delete(CategoryL c) 
         {

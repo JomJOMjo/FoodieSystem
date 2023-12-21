@@ -166,14 +166,17 @@
   <data name="png-transparent-computer-icons-error-computer-text-trademark-computer-thumbnail1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-computer-icons-error-computer-text-trademark-computer-thumbnail1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-fast-food-logo-png-image_5763171" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-fast-food-logo-png-image_5763171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="png-transparent-computer-icons-error-computer-text-trademark-computer-thumbnail2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-transparent-computer-icons-error-computer-text-trademark-computer-thumbnail2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Grilled-Salmon-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Grilled-Salmon-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="png-transparent-computer-icons-error-computer-text-trademark-computer-thumbnail2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-computer-icons-error-computer-text-trademark-computer-thumbnail2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="121034" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\121034.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-transparent-computer-icons-error-computer-text-trademark-computer-thumbnail3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-transparent-computer-icons-error-computer-text-trademark-computer-thumbnail3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="party_PNG1.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\party_PNG1.png.crdownload;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -183,6 +186,9 @@
   </data>
   <data name="coke" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coke.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-fast-food-logo-png-image_5763171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-fast-food-logo-png-image_5763171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ultimate-Veggie-Burgers-FT-Recipe-0821-5d7532c53a924a7298d2175cf1d4219f" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ultimate-Veggie-Burgers-FT-Recipe-0821-5d7532c53a924a7298d2175cf1d4219f.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,11 +202,20 @@
   <data name="blue-exit-icon-18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blue-exit-icon-18.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="welcome_PNG48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\welcome_PNG48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngtree-fast-food-logo-png-image_57631711" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-fast-food-logo-png-image_57631711.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-fast-food-logo-png-image_57631712" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-fast-food-logo-png-image_57631712.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="welcome_PNG48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\welcome_PNG48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giphy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="580b57fcd9996e24bc43c1ed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\580b57fcd9996e24bc43c1ed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +223,8 @@
   <data name="309-3095068_free-download-customer-support-icon-blue-clipart-customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\309-3095068_free-download-customer-support-icon-blue-clipart-customer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="121034" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\121034.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="giphy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="jollibee-chicken-joy-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jollibee-chicken-joy-2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,7 +241,7 @@
   <data name="logoutbutton-hi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logoutbutton-hi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="png-transparent-computer-icons-error-computer-text-trademark-computer-thumbnail3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-computer-icons-error-computer-text-trademark-computer-thumbnail3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jinx-flipzflops" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jinx-flipzflops.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

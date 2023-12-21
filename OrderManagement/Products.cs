@@ -76,7 +76,6 @@ namespace OrderManagement
             String Loggeduser = Login.userLogged;
             UserBL usr = ual.GetIDFromusername(Loggeduser);
 
-            p.added_by = usr.userId;
 
             bool success = pal.Insert(p);
             if (success == true)
@@ -123,7 +122,7 @@ namespace OrderManagement
             String Loggeduser = Login.userLogged;
             UserBL usr = ual.GetIDFromusername(Loggeduser);
 
-            p.added_by = usr.userId;
+        
 
             bool success = pal.Update(p);
             if(success ==  true)

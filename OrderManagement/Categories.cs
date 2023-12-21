@@ -34,6 +34,29 @@ namespace OrderManagement
 
         private void btnupdate_Click(object sender, EventArgs e)
         {
+            cl.id =int.Parse(txtid.Text);
+            cl.Title = txttitle.Text;
+            cl.Description = txtDescript.Text;
+            cl.added_date = DateTime.Now;
+
+            string loggedUser = Login.userLogged;
+            UserBL usr = ual.GetIDFromusername(loggedUser);
+
+            bool success = al.Update(cl);
+
+            if(success == true)
+            {
+                MessageBox.Show("Updated Successfully!");
+                Clear();
+
+                DataTable dt = al.Select();
+                dgvcategory.DataSource = dt;
+            }
+            else
+            {
+                MessageBox.Show("Failed to Update!");
+
+            }
 
         }
 
@@ -45,21 +68,21 @@ namespace OrderManagement
 
             string logginUser = Login.userLogged;
             UserBL usr = ual.GetIDFromusername(logginUser);
-            cl.added_by = usr.userId;
+           
            
 
             bool success = al.Insert(cl);
 
             if(success == true) 
             {
-                MessageBox.Show("New Category Inserted Successfully!");
+                MessageBox.Show("Inserted Successfully!");
                 Clear();
                 DataTable dt = al.Select();
                 dgvcategory.DataSource = dt;
             }
             else
             {
-                MessageBox.Show("Failed to insert Category!");
+                MessageBox.Show("Failed to Insert Category!");
             }
         }
         public void Clear()
@@ -110,6 +133,15 @@ namespace OrderManagement
                 MessageBox.Show("Failed to delete Category!");
             }
 
+        }
+
+        private void dgvcategory_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int Rowindex = e.RowIndex;
+            txtid.Text = dgvcategory.Rows[Rowindex].Cells[0].Value.ToString();
+            txttitle.Text = dgvcategory.Rows[Rowindex].Cells[1].Value.ToString();
+            txtDescript.Text = dgvcategory.Rows[Rowindex].Cells[2].Value.ToString();
+            
         }
     }
 }

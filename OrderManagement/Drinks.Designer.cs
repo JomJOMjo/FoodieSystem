@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -72,6 +72,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 426);
             this.panel1.TabIndex = 1;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::OrderManagement.Properties.Resources.png_transparent_computer_icons_error_computer_text_trademark_computer_thumbnail1;
+            this.pictureBox7.Location = new System.Drawing.Point(747, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(26, 24);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // label6
             // 
@@ -133,17 +144,6 @@
             this.label1.Size = new System.Drawing.Size(51, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Sprite";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::OrderManagement.Properties.Resources.png_transparent_computer_icons_error_computer_text_trademark_computer_thumbnail1;
-            this.pictureBox7.Location = new System.Drawing.Point(747, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(26, 24);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox6
             // 
@@ -214,6 +214,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Drinks";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Drinks";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

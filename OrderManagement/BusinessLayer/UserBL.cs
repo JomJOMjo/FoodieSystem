@@ -19,7 +19,7 @@ namespace OrderManagement.BusinessLayer
         public string gender { get; set; }
         public string User_Type { get; set; }
         public DateTime added_date {  get; set; }
-        public int added_by {  get; set; }
+    
 
     }
 }
